@@ -11,12 +11,14 @@ export function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-black shadow">
+    <nav className="w-full bg-black shadow-lg">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href={"/"}>
-              <h2 className="text-2xl font-bold text-white">Music Player</h2>
+              <h2 className="text-2xl font-bold text-white">
+                Next.JS Music Player
+              </h2>
             </Link>
             <div className="md:hidden">
               <button
@@ -75,34 +77,34 @@ export function Navbar() {
             </ul>
 
             <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-              <a
-                href="javascript:void(0)"
+              <Link
+                href={"/"}
                 className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
               >
                 Sign in
-              </a>
-              <a
-                href="javascript:void(0)"
+              </Link>
+              <Link
+                href={"/"}
                 className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
               >
                 Sign up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="hidden space-x-2 md:inline-block">
-          <a
-            href="javascript:void(0)"
+          <Link
+            href={"/"}
             className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
           >
             Sign in
-          </a>
-          <a
-            href="javascript:void(0)"
+          </Link>
+          <Link
+            href={"/"}
             className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
           >
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

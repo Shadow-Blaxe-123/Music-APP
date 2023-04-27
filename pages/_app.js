@@ -1,13 +1,15 @@
-import { Navbar } from '@/Components/Navbar'
-import '@/styles/globals.css'
-import Head from 'next/head'
-import Script from 'next/script'
+import Footer from "@/Components/Footer";
+import { Navbar } from "@/Components/Navbar";
+import "@/styles/globals.css";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <Navbar/>
-    <Component {...pageProps} />
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
     </>
-  )
+  );
 }
